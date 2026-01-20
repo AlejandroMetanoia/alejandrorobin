@@ -72,23 +72,20 @@ const Hero: React.FC = () => {
           <div className="max-w-4xl mx-auto w-full flex flex-col items-center animate-fade-in-up">
 
             {/* Text Group */}
-            <div className="space-y-4 mt-4 md:mt-8">
+            <div className="space-y-4 mt-4 md:mt-32">
               <h2 className="text-xl md:text-2xl font-light tracking-[0.3em] uppercase text-silver-900 mb-4 drop-shadow-md">
                 Inteligencia Artificial & Estrategia
               </h2>
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-silver-900 tracking-tighter mb-2 mix-blend-multiply drop-shadow-lg">
                 Alejandro Robin
               </h1>
-              <p className="text-2xl md:text-4xl font-light text-silver-500 mb-8 tracking-wide drop-shadow-md">
-                Transformación de pensamiento
-              </p>
-              <p className="text-lg text-silver-600 max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-sm">
+              <p className="text-lg text-silver-600 max-w-2xl mx-auto mb-6 leading-relaxed drop-shadow-sm">
                 Redefinimos el futuro de su empresa integrando inteligencia artificial.
               </p>
             </div>
 
             {/* Buttons Group */}
-            <div className="flex flex-col sm:flex-row items-center justify-center mt-24 sm:mt-20 md:mt-32">
+            <div className="flex flex-col sm:flex-row items-center justify-center mt-8 sm:mt-10 md:mt-12">
               <GradientButton
                 onClick={() => scrollToSection('proceso')}
                 className="px-6 py-3 text-sm md:px-8 md:py-4 md:text-base"

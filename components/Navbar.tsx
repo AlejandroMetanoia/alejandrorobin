@@ -30,15 +30,15 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${isScrolled
-          ? 'bg-pearl/80 backdrop-blur-md border-b border-silver-100 py-4'
-          : 'bg-transparent py-6'
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 backdrop-blur-sm ${isScrolled
+        ? 'bg-pearl/80 border-b border-silver-100 py-4'
+        : 'bg-transparent py-6'
         }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className={`text-2xl font-serif italic font-bold tracking-tight transition-colors duration-300 ${isScrolled ? 'text-silver-900' : 'text-silver-900'}`}
+          className={`text-2xl font-serif italic font-bold tracking-tight transition-colors duration-300 drop-shadow-lg ${isScrolled ? 'text-silver-900' : 'text-silver-900'}`}
         >
           Alejandro Robin.
         </button>
