@@ -30,10 +30,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 backdrop-blur-sm ${isScrolled
-        ? 'bg-pearl/80 border-b border-silver-100 py-4'
-        : 'bg-transparent py-6'
-        }`}
+      className="fixed top-0 left-0 right-0 z-40 transition-all duration-500 backdrop-blur-sm bg-pearl/80 border-b border-silver-100 py-4"
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <button
