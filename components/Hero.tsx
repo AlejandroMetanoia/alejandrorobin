@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
             {/* Text Group */}
             {/* Text Group */}
             {/* Text Group - Decoupled */}
-            <h2 className="absolute top-[43vh] left-0 right-0 text-center mx-auto text-xl md:text-2xl font-light tracking-[0.3em] uppercase text-white mb-2 drop-shadow-xl z-30">
+            <h2 className="absolute top-[43vh] left-0 right-0 text-center mx-auto text-xl md:text-2xl font-light tracking-[0.3em] uppercase text-gray-300 mb-2 drop-shadow-xl z-30">
               Inteligencia Artificial & Estrategia
             </h2>
 
