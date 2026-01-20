@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Metanoia | Transformación de Pensamiento</title>
-    <meta name="description" content="Agencia de IA Premium para empresas." />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              pearl: '#fdfcfc',
-              lilac: {
-                50: '#fbf7ff',
-                100: '#f4ebff',
-                200: '#e9d5ff',
-                300: '#d8b4fe',
-                500: '#a855f7',
-                900: '#581c87',
-              },
-              silver: {
-                50: '#f9fafb',
-                100: '#f3f4f6',
-                300: '#d1d5db',
-                500: '#6b7280',
-                900: '#111827',
-              }
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alejandro Robin | Transformación de Pensamiento</title>
+  <meta name="description" content="Consultoría Estratégica de IA para empresas." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pearl: '#050505',
+            lilac: {
+              50: '#1e052f',
+              100: '#3b0764',
+              200: '#581c87',
+              300: '#7e22ce',
+              500: '#a855f7',
+              900: '#f3e8ff',
             },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              serif: ['Playfair Display', 'serif'],
+            silver: {
+              50: '#111827',
+              100: '#1f2937',
+              300: '#4b5563',
+              500: '#9ca3af',
+              900: '#f9fafb',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out',
+            'fade-in-up': 'fadeInUp 1s ease-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
             },
-            animation: {
-              'fade-in': 'fadeIn 1s ease-out',
-              'fade-in-up': 'fadeInUp 1s ease-out',
-            },
-            keyframes: {
-              fadeIn: {
-                '0%': { opacity: '0' },
-                '100%': { opacity: '1' },
-              },
-              fadeInUp: {
-                '0%': { opacity: '0', transform: 'translateY(20px)' },
-                '100%': { opacity: '1', transform: 'translateY(0)' },
-              }
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
             }
           }
         }
       }
-    </script>
-    <style type="text/tailwindcss">
-      @layer base {
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer base {
         @property --pos-x {
           syntax: '<percentage>';
           initial-value: 11.14%;
@@ -97,13 +100,13 @@
 
         @property --color-4 {
           syntax: '<color>';
-          initial-value: #c084fc; /* Lilac 400 */
+          initial-value: #9333ea; /* Purple 600 */
           inherits: false;
         }
 
         @property --color-5 {
           syntax: '<color>';
-          initial-value: #e9d5ff; /* Lilac 200 */
+          initial-value: #581c87; /* Lilac 900 (darker) */
           inherits: false;
         }
 
@@ -224,13 +227,13 @@
         }
 
         .gradient-button-variant {
-          --color-1: #000022;
-          --color-2: #1f3f6d;
-          --color-3: #469396;
-          --color-4: #f1ffa5;
+          --color-1: #0f172a;
+          --color-2: #334155;
+          --color-3: #475569;
+          --color-4: #a855f7;
           --border-angle: 200deg;
-          --border-color-1: hsla(320, 75%, 90%, 0.6);
-          --border-color-2: hsla(320, 50%, 90%, 0.15);
+          --border-color-1: hsla(270, 75%, 60%, 0.6);
+          --border-color-2: hsla(270, 50%, 60%, 0.15);
         }
 
         .gradient-button-variant:hover {
@@ -238,10 +241,10 @@
           --pos-y: 95.51%;
           --spread-x: 110.24%;
           --spread-y: 110.2%;
-          --color-1: #000020;
-          --color-2: #f1ffa5;
-          --color-3: #469396;
-          --color-4: #1f3f6d;
+          --color-1: #020617;
+          --color-2: #a855f7;
+          --color-3: #64748b;
+          --color-4: #334155;
           --color-5: #000;
           --stop-1: 0%;
           --stop-2: 10%;
@@ -289,8 +292,10 @@
 }
 </script>
 </head>
-  <body class="bg-pearl text-silver-900 antialiased selection:bg-lilac-200 selection:text-lilac-900">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+
+<body class="bg-pearl text-silver-900 antialiased selection:bg-lilac-200 selection:text-lilac-900">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>

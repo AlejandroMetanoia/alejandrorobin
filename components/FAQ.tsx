@@ -10,7 +10,7 @@ const faqData: FAQItem[] = [
   },
   {
     id: 2,
-    question: "¿Necesito un equipo técnico interno para trabajar con Metanoia?",
+    question: "¿Necesito un equipo técnico interno para trabajar con Alejandro Robin?",
     answer: "No necesariamente. Podemos actuar como su brazo técnico completo o colaborar estrechamente con su equipo de TI existente para transferir conocimiento."
   },
   {
@@ -44,8 +44,8 @@ const FAQ: React.FC = () => {
 
         <div className="space-y-4">
           {faqData.map((item, index) => (
-            <div 
-              key={item.id} 
+            <div
+              key={item.id}
               className={`border border-silver-100 rounded-2xl overflow-hidden transition-all duration-300 ${openIndex === index ? 'bg-lilac-50/50 shadow-sm' : 'hover:bg-silver-50'}`}
             >
               <button
@@ -59,7 +59,7 @@ const FAQ: React.FC = () => {
                   {openIndex === index ? <Minus size={20} /> : <Plus size={20} />}
                 </span>
               </button>
-              <div 
+              <div
                 className={`px-8 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-48 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
               >
                 <p className="text-silver-500 leading-relaxed">

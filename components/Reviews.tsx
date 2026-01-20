@@ -8,7 +8,7 @@ const reviews: Review[] = [
     author: "Elena Vasquez",
     role: "CTO",
     company: "FinTech Nova",
-    content: "Metanoia no solo implementó tecnología, cambiaron nuestra forma de pensar sobre los datos. El ROI fue evidente en el primer trimestre."
+    content: "Alejandro Robin no solo implementó tecnología, cambió nuestra forma de pensar sobre los datos. El ROI fue evidente en el primer trimestre."
   },
   {
     id: 2,

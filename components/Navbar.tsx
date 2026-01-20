@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className={`text-2xl font-serif italic font-bold tracking-tight transition-colors duration-300 ${isScrolled ? 'text-silver-900' : 'text-silver-900'}`}
         >
-          Metanoia.
+          Alejandro Robin.
         </button>
 
         {/* Desktop Menu */}

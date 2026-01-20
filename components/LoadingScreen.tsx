@@ -26,11 +26,11 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-pearl text-silver-900">
       <div className="relative mb-4">
         <h1 className="text-4xl md:text-6xl font-serif italic tracking-tighter loader-text">
-          Metanoia
+          Alejandro Robin
         </h1>
       </div>
       <div className="w-64 h-1 bg-silver-100 rounded-full overflow-hidden">
-        <div 
+        <div
           className="h-full bg-lilac-500 transition-all duration-300 ease-out"
           style={{ width: `${progress}%` }}
         />
