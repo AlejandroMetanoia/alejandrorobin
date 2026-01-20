@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className={`text-2xl font-serif italic font-bold tracking-tight transition-colors duration-300 drop-shadow-lg ${isScrolled ? 'text-silver-900' : 'text-silver-900'}`}
+          className={`text-2xl font-serif italic font-bold tracking-tight transition-colors duration-300 drop-shadow-2xl ${isScrolled ? 'text-silver-900' : 'text-silver-900'}`}
         >
           Alejandro Robin.
         </button>
