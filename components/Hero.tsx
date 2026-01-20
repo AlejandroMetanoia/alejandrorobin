@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
 
             {/* Text Group */}
             {/* Text Group */}
-            <div className="mt-4 md:mt-48">
+            <div className="mt-4 md:mt-80">
               <h2 className="text-xl md:text-2xl font-light tracking-[0.3em] uppercase text-silver-900 mb-2 drop-shadow-lg">
                 Inteligencia Artificial & Estrategia
               </h2>
