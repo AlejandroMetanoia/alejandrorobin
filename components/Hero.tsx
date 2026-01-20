@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
                 Alejandro Robin
               </h1>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center mt-[25vh]">
+              <div className="flex flex-col sm:flex-row items-center justify-center mt-[15vh]">
                 <GradientButton
                   onClick={() => scrollToSection('proceso')}
                   className="px-6 py-3 text-sm md:px-8 md:py-4 md:text-base"
