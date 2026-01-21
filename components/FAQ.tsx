@@ -5,23 +5,23 @@ import { FAQItem } from '../types';
 const faqData: FAQItem[] = [
   {
     id: 1,
-    question: "¿Qué industrias se benefician más de sus servicios?",
-    answer: "Aunque nuestra metodología es agnóstica a la industria, tenemos profunda experiencia en Finanzas, Logística, Salud y Retail de Lujo, donde el manejo de datos complejos y la experiencia del cliente son críticos."
+    question: "¿Cómo garantizan que la inversión en IA sea rentable?",
+    answer: "Nuestro proceso comienza con un diagnóstico gratuito donde evaluamos la viabilidad financiera. No implementamos tecnología por moda; diseñamos soluciones basadas en el ROI proyectado, asegurando que el ahorro operativo o el incremento en ingresos justifique plenamente la inversión."
   },
   {
     id: 2,
-    question: "¿Necesito un equipo técnico interno para trabajar con Alejandro Robin?",
-    answer: "No necesariamente. Podemos actuar como su brazo técnico completo o colaborar estrechamente con su equipo de TI existente para transferir conocimiento."
+    question: "¿Es seguro el manejo de los datos de mi empresa?",
+    answer: "Totalmente. La privacidad es el pilar de nuestra arquitectura. Implementamos capas de seguridad avanzadas y utilizamos modelos que garantizan la confidencialidad absoluta: tus datos corporativos nunca se utilizan para entrenar modelos públicos y siempre permanecen bajo tu control."
   },
   {
     id: 3,
-    question: "¿Cuánto tiempo toma ver resultados?",
-    answer: "Nuestros sprints iniciales de 'Quick Wins' suelen mostrar valor en 4-6 semanas. Transformaciones profundas completas generalmente operan en un ciclo de 3 a 6 meses."
+    question: "¿Necesita mi equipo conocimientos técnicos avanzados?",
+    answer: "No. En Metanoia creamos soluciones con un enfoque de \"complejidad invisible\". Entregamos sistemas intuitivos que se integran en tus flujos actuales. Además, te acompañamos en la fase de adopción para asegurar que tu equipo saque el máximo provecho de la IA desde el primer día."
   },
   {
     id: 4,
-    question: "¿Cómo garantizan la privacidad de nuestros datos?",
-    answer: "La seguridad es primordial. Implementamos arquitecturas de IA privadas (on-premise o VPC), asegurando que sus datos nunca se utilicen para entrenar modelos públicos."
+    question: "¿Cuánto tiempo tarda en implementarse una solución?",
+    answer: "Depende del alcance, pero nuestra metodología está diseñada para la agilidad. Priorizamos \"Quick Wins\" (victorias rápidas) que permiten ver resultados operativos en pocas semanas, permitiendo que la solución escale y evolucione de forma modular según crezcan tus necesidades."
   }
 ];
 
@@ -33,11 +33,11 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="pt-28 h-screen flex flex-col bg-white border-t border-silver-100">
+    <section id="faq" className="pt-28 h-screen flex flex-col bg-black border-t border-gray-800">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
           <span className="text-lilac-500 font-medium tracking-widest uppercase text-sm mb-2 block">Dudas Comunes</span>
-          <h2 className="text-4xl md:text-5xl font-serif text-silver-900">
+          <h2 className="text-4xl md:text-5xl font-serif text-white">
             Claridad ante todo
           </h2>
         </div>
@@ -46,13 +46,13 @@ const FAQ: React.FC = () => {
           {faqData.map((item, index) => (
             <div
               key={item.id}
-              className={`border border-silver-100 rounded-2xl overflow-hidden transition-all duration-300 ${openIndex === index ? 'bg-lilac-50/50 shadow-sm' : 'hover:bg-silver-50'}`}
+              className={`border border-gray-800 rounded-2xl overflow-hidden transition-all duration-300 ${openIndex === index ? 'bg-white/5 shadow-sm border-lilac-500/30' : 'hover:bg-white/5'}`}
             >
               <button
                 className="w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className={`text-lg font-medium ${openIndex === index ? 'text-lilac-900' : 'text-silver-700'}`}>
+                <span className={`text-lg font-medium ${openIndex === index ? 'text-lilac-300' : 'text-gray-200'}`}>
                   {item.question}
                 </span>
                 <span className="text-lilac-500 ml-4">
@@ -62,7 +62,7 @@ const FAQ: React.FC = () => {
               <div
                 className={`px-8 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-48 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
               >
-                <p className="text-silver-500 leading-relaxed">
+                <p className="text-gray-400 leading-relaxed">
                   {item.answer}
                 </p>
               </div>
