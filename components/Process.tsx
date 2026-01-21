@@ -45,7 +45,7 @@ const Process: React.FC = () => {
     <section id="proceso" className="bg-black relative h-screen pt-24 overflow-hidden flex flex-col md:flex-row">
       {/* Left Column: Content */}
       <div className="w-full md:w-1/2 px-6 h-full flex flex-col justify-center pb-8">
-        <div className="max-w-xl mx-auto md:mx-0 md:ml-auto md:pr-12 w-full">
+        <div className="max-w-2xl mx-auto md:mx-0 md:ml-auto md:pr-6 w-full">
           <div className="text-left mb-6">
             <span className="text-lilac-500 font-medium tracking-widest uppercase text-xs md:text-sm mb-1 block">Metodología</span>
             <h2 className="text-2xl md:text-4xl font-serif text-white">
@@ -53,10 +53,10 @@ const Process: React.FC = () => {
             </h2>
           </div>
 
-          <div className="flex flex-col gap-3 relative z-10">
+          <div className="flex flex-col gap-4 relative z-10">
             {steps.map((step, idx) => (
               <div key={idx} className="w-full">
-                <div className="bg-gray-200 border border-gray-300 p-3 px-5 flex flex-row items-center text-left shadow-lg hover:-translate-y-1 transition-all duration-300 gap-4">
+                <div className="bg-gray-200 border border-gray-300 p-4 px-6 flex flex-row items-center text-left shadow-lg hover:-translate-y-1 transition-all duration-300 gap-5">
                   <div className="min-w-[2.5rem] w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-purple-700 font-serif font-bold text-lg shadow-sm">
                     {step.number}
                   </div>
@@ -71,7 +71,7 @@ const Process: React.FC = () => {
             ))}
 
             {/* CTA Section */}
-            <div className="mt-4 pt-2 border-t border-gray-800/30">
+            <div className="mt-5 pt-3 border-t border-gray-800/30">
               <p className="text-gray-300 text-xs md:text-sm italic leading-relaxed">
                 "El primer paso hacia la eficiencia no tiene coste. <button onClick={scrollToContact} className="text-lilac-400 hover:text-lilac-300 underline underline-offset-2 font-medium transition-colors">Agenda tu sesión de diagnóstico estratégico</button> y descubramos juntos las oportunidades de escala que la IA tiene para tu negocio."
               </p>
