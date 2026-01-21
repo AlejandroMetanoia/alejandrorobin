@@ -40,7 +40,7 @@ const Process: React.FC = () => {
   };
 
   return (
-    <section id="proceso" className="bg-black relative h-screen overflow-hidden flex flex-col md:flex-row">
+    <section id="proceso" className="bg-black relative h-screen overflow-hidden flex flex-col md:flex-row scroll-mt-20">
       {/* Left Column: Content */}
       <div className="w-full md:w-1/2 px-6 h-full flex flex-col justify-center">
         <div className="max-w-xl mx-auto md:mx-0 md:ml-auto md:pr-12 w-full">
