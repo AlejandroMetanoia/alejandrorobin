@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
               Alejandro Robin
             </h1>
 
-            <div className="absolute top-[75vh] left-0 right-0 flex justify-center z-30">
+            <div className="absolute top-[72vh] left-0 right-0 flex justify-center z-30">
               <GradientButton
                 onClick={() => scrollToSection('proceso')}
                 className="px-6 py-3 text-sm md:px-8 md:py-4 md:text-base"
@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
               </GradientButton>
             </div>
 
-            <p className="absolute bottom-10 left-8 text-lg text-white text-left max-w-2xl px-4 leading-relaxed drop-shadow-xl font-medium">
+            <p className="absolute bottom-12 left-8 text-lg text-white text-left max-w-2xl px-4 leading-relaxed drop-shadow-xl font-medium">
               Redefinimos el futuro de su empresa integrando inteligencia artificial.
             </p>
           </div>
