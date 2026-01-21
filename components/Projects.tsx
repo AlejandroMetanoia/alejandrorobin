@@ -68,7 +68,7 @@ const Projects: React.FC = () => {
     };
 
     return (
-        <section id="proyectos" className="h-screen pt-12 bg-gray-50 border-b border-silver-100 overflow-hidden flex flex-col relative">
+        <section id="proyectos" className="pt-12 pb-12 bg-gray-50 border-b border-silver-100 overflow-hidden flex flex-col relative">
             <div className="container mx-auto px-6 mb-8 flex items-end justify-between flex-shrink-0">
                 <div>
                     <span className="text-lilac-500 font-medium tracking-widest uppercase text-sm mb-2 block animate-fade-in">
